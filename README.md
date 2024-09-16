@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# todo App
+
+## Features
+- Add new tasks
+- Edit task 
+- Mark tasks as completed
+- Delete tasks
+- Persist tasks between sessions using localStorage
+
+## running app
+
+1. Clone the repository
+2. write npm install in the terminal
+3. write npm start

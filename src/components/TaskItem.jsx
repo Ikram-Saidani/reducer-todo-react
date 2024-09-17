@@ -6,7 +6,7 @@ function TaskItem({ item, dispatchTodos }) {
   const [showEdit, setShowEdit] = useState(false);
   function handleChangeStatus() {
     dispatchTodos({ type: "CHANGESTATUS", payload: item });
-    window.location.reload();
+    
     toast.success("Status changed successfully");
   }
 
@@ -14,7 +14,7 @@ function TaskItem({ item, dispatchTodos }) {
     if( window.confirm("Are you sure you want to delete this task?")){
       dispatchTodos({ type: "DELETETODO", payload: item });
       toast.success("Task deleted successfully");
-      window.location.reload();
+     
     }
     else{
       toast.error("Task not deleted");

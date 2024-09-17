@@ -5,7 +5,7 @@ function EditTask({ item, handleChangeStatus, dispatchTodos, setShowEdit }) {
   const [updatedItem, setUpdatedItem] = useState(item);
 
   function handleEdit(e) {
-      e.preventDefault();
+    e.preventDefault();
     if (updatedItem.todo === "" || updatedItem.description === "") {
       toast.error("Please fill all the fields");
     } else {
@@ -20,7 +20,6 @@ function EditTask({ item, handleChangeStatus, dispatchTodos, setShowEdit }) {
       });
       setShowEdit(false);
       toast.success("Task edited successfully");
-      
     }
   }
 
@@ -50,14 +49,6 @@ function EditTask({ item, handleChangeStatus, dispatchTodos, setShowEdit }) {
           height: "30px",
         }}
       >
-        <input
-          type="radio"
-          name="status"
-          onClick={() => handleChangeStatus(item)}
-          onChange={(e) =>
-            setUpdatedItem({ ...updatedItem, status: e.target.value })
-          }
-        />
         <p
           style={{
             color: item.status === true ? "green" : "red",
